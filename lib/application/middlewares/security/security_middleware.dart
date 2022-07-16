@@ -12,7 +12,12 @@ import 'security_skip_url.dart';
 
 class SecurityMiddleware extends Middlewares {
   final ILogger log;
-  final skipUrl = <SecuritySkipUrl>[];
+
+  // Urls que não necessitam de validação de acesso
+  final skipUrl = <SecuritySkipUrl>[
+    SecuritySkipUrl(url: '/auth/register', method: 'POST'),
+    SecuritySkipUrl(url: '/auth/teste', method: 'GET'),
+  ];
 
   SecurityMiddleware(this.log);
 

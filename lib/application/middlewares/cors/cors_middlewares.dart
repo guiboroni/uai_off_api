@@ -11,7 +11,7 @@ import '../middlewares.dart';
 class CorsMiddlewares extends Middlewares {
   final Map<String, String> headers = {
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methos': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
     'Access-Control-Allow-Header':
         '${HttpHeaders.contentTypeHeader}, ${HttpHeaders.authorizationHeader}'
   };

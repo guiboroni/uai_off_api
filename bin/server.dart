@@ -5,11 +5,10 @@ import 'package:get_it/get_it.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_router/shelf_router.dart';
-
-import 'lib/application/config/application_config.dart';
-import 'lib/application/middlewares/cors/cors_middlewares.dart';
-import 'lib/application/middlewares/defaultContentType/default_contentType.dart';
-import 'lib/application/middlewares/security/security_middleware.dart';
+import 'package:uai_off_api/application/config/application_config.dart';
+import 'package:uai_off_api/application/middlewares/cors/cors_middlewares.dart';
+import 'package:uai_off_api/application/middlewares/defaultContentType/default_contentType.dart';
+import 'package:uai_off_api/application/middlewares/security/security_middleware.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
 const _hostname = '0.0.0.0';
